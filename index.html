@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AmaraVeda - Pusat Belajar Anak</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;family=Quicksand:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container-highest": "#e4e2e2",
+                      "surface-dim": "#dbd9d9",
+                      "secondary-container": "#fdd400",
+                      "surface": "#fbf9f8",
+                      "surface-container-high": "#eae8e7",
+                      "surface-container-low": "#f5f3f3",
+                      "secondary-fixed-dim": "#e9c400",
+                      "inverse-surface": "#303030",
+                      "tertiary-container": "#ac6300",
+                      "primary-fixed-dim": "#adc6ff",
+                      "secondary": "#705d00",
+                      "on-primary-container": "#fefcff",
+                      "on-secondary-container": "#6f5c00",
+                      "primary": "#0058bc",
+                      "on-secondary-fixed-variant": "#544600",
+                      "on-primary": "#ffffff",
+                      "error": "#ba1a1a",
+                      "tertiary": "#894d00",
+                      "outline": "#717786",
+                      "surface-bright": "#fbf9f8",
+                      "primary-container": "#0070eb",
+                      "on-secondary": "#ffffff",
+                      "on-surface": "#1b1c1c",
+                      "error-container": "#ffdad6",
+                      "inverse-on-surface": "#f2f0f0",
+                      "on-primary-fixed-variant": "#004493",
+                      "on-background": "#1b1c1c",
+                      "tertiary-fixed-dim": "#ffb874",
+                      "background": "#fbf9f8",
+                      "inverse-primary": "#adc6ff",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-container": "#efeded",
+                      "secondary-fixed": "#ffe170",
+                      "on-tertiary-fixed-variant": "#6a3b00",
+                      "on-error": "#ffffff",
+                      "outline-variant": "#c1c6d7",
+                      "on-error-container": "#93000a",
+                      "tertiary-fixed": "#ffdcbf",
+                      "surface-variant": "#e4e2e2",
+                      "on-tertiary-fixed": "#2d1600",
+                      "surface-tint": "#005bc1",
+                      "primary-fixed": "#d8e2ff",
+                      "on-tertiary": "#ffffff",
+                      "on-primary-fixed": "#001a41",
+                      "on-secondary-fixed": "#221b00",
+                      "on-surface-variant": "#414755",
+                      "on-tertiary-container": "#fffbff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "gutter": "20px",
+                      "margin-desktop": "64px",
+                      "margin-mobile": "16px",
+                      "sm": "12px",
+                      "xs": "4px",
+                      "base": "8px",
+                      "md": "24px",
+                      "xl": "80px",
+                      "lg": "48px"
+              },
+              "fontFamily": {
+                      "body-md": [
+                              "Be Vietnam Pro"
+                      ],
+                      "headline-xl": [
+                              "Quicksand"
+                      ],
+                      "headline-xl-mobile": [
+                              "Quicksand"
+                      ],
+                      "headline-md": [
+                              "Quicksand"
+                      ],
+                      "label-sm": [
+                              "Be Vietnam Pro"
+                      ],
+                      "headline-lg": [
+                              "Quicksand"
+                      ],
+                      "body-lg": [
+                              "Be Vietnam Pro"
+                      ],
+                      "label-lg": [
+                              "Be Vietnam Pro"
+                      ]
+              },
+              "fontSize": {
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-xl": [
+                              "40px",
+                              {
+                                      "lineHeight": "48px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-xl-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "38px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-lg": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .blob-bg {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23d8e2ff' d='M44.7,-76.4C58.8,-69.2,71.8,-59.1,81.3,-46.3C90.8,-33.5,96.8,-18.1,96.5,-3C96.2,12.1,89.5,26.9,80.1,40.1C70.6,53.4,58.3,65.1,44.2,74.1C30.1,83.1,14.3,89.4,-1.2,91.4C-16.8,93.4,-33.5,91,-47.8,82.4C-62.1,73.8,-73.9,59,-82.1,42.8C-90.3,26.6,-94.8,9,-92.3,-7.4C-89.8,-23.8,-80.4,-39.1,-68.5,-51.1C-56.6,-63.1,-42.2,-71.8,-28,-78.6C-13.8,-85.4,0.1,-90.3,14,-88C28,-85.7,42,-76.2,44.7,-76.4Z' transform='translate(100 100)' /%3E%3C/svg%3E");
+            background-size: cover;
+            background-position: center;
+        }
+        .blob-bg-yellow {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23ffe170' d='M44.7,-76.4C58.8,-69.2,71.8,-59.1,81.3,-46.3C90.8,-33.5,96.8,-18.1,96.5,-3C96.2,12.1,89.5,26.9,80.1,40.1C70.6,53.4,58.3,65.1,44.2,74.1C30.1,83.1,14.3,89.4,-1.2,91.4C-16.8,93.4,-33.5,91,-47.8,82.4C-62.1,73.8,-73.9,59,-82.1,42.8C-90.3,26.6,-94.8,9,-92.3,-7.4C-89.8,-23.8,-80.4,-39.1,-68.5,-51.1C-56.6,-63.1,-42.2,-71.8,-28,-78.6C-13.8,-85.4,0.1,-90.3,14,-88C28,-85.7,42,-76.2,44.7,-76.4Z' transform='translate(100 100)' /%3E%3C/svg%3E");
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden antialiased pt-24">
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-desktop py-4 max-w-full mx-auto bg-surface/80 dark:bg-surface/80 backdrop-blur-md shadow-sm dark:shadow-none bg-surface dark:bg-surface-dim shadow-[0px_4px_20px_rgba(0,88,188,0.1)]">
+<div class="flex items-center gap-2 hover:scale-105 hover:shadow-md transition-all duration-300">
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-inverse-primary">AmaraVeda</span>
+</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg hover:scale-105 hover:shadow-md duration-300" href="#program">Program</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg hover:scale-105 hover:shadow-md duration-300" href="#fasilitas">Fasilitas</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg hover:scale-105 hover:shadow-md duration-300" href="#testimoni">Testimoni</a>
+</nav>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-lg text-label-lg hover:scale-105 hover:shadow-md transition-all duration-300 hidden md:block">
+            Daftar Sekarang
+        </button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</header>
+<!-- Hero Section -->
+<section class="relative min-h-[80vh] flex items-center px-margin-mobile md:px-margin-desktop py-lg overflow-hidden">
+<div class="absolute inset-0 blob-bg opacity-30 z-0"></div>
+<div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-md relative z-10 items-center">
+<div class="flex flex-col gap-sm">
+<div class="inline-flex items-center gap-xs bg-primary-fixed text-on-primary-fixed px-4 py-2 rounded-full w-max mb-4 shadow-[0px_4px_20px_rgba(0,88,188,0.1)]">
+<span class="material-symbols-outlined text-[20px]" data-icon="school">school</span>
+<span class="font-label-lg text-label-lg">Pendidikan Usia Dini</span>
+</div>
+<h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-on-surface">
+                    Wujudkan Masa Depan <span class="text-primary">Cemerlang</span> si Kecil
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-4 mb-6 max-w-lg">
+                    Belajar Baca, Tulis, dan Berhitung dengan metode yang seru dan menyenangkan!
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-secondary-container text-on-secondary-container px-8 py-3 rounded-full font-label-lg text-label-lg hover:scale-105 hover:shadow-md transition-all duration-300 shadow-[0px_4px_20px_rgba(253,212,0,0.3)]">
+                        Konsultasi Gratis
+                    </button>
+<button class="border-2 border-primary text-primary px-8 py-3 rounded-full font-label-lg text-label-lg hover:bg-primary-fixed hover:scale-105 hover:shadow-md transition-all duration-300">
+                        Pelajari Program
+                    </button>
+</div>
+</div>
+<div class="relative h-[400px] md:h-[500px] w-full mt-12 lg:mt-0">
+<div class="absolute inset-0 bg-primary-container rounded-[40px] transform rotate-3 scale-95 shadow-[0px_4px_20px_rgba(0,88,188,0.2)]"></div>
+<img class="absolute inset-0 w-full h-full object-cover rounded-[40px] transform -rotate-3 hover:rotate-0 transition-transform duration-500 shadow-lg" data-alt="A playful and bright image of young children engaged in a colorful learning activity in a bright, modern classroom setting. The children are smiling and interacting with educational toys. The lighting is soft and cheerful, emphasizing the joyful atmosphere of early education." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnu5A30zH053_B9HtrdG1R2T5b_gDNITegFAF0f2PMSdYDaj6j5JMRc7FTPyP3DcEkEGuqzA-QMw2JnEiMSot8uoAbh5tHh__VJmIC8JjkUhxgBpjl9wQ-NUVLBBtjogfDBkUlfDY3pNfnaGoX1TdjdzH3oQfPvmfLyNgMXN7VHFMRUqJF_mnGkzQWsuZRxMZkFFzkyEFVc6wq_kKJxw22xlFrFD3_17xS6YUJtvinhLV6b6UrdEvW"/>
+</div>
+</div>
+</section>
+<!-- Why Choose Us -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop bg-surface-container-lowest" id="fasilitas">
+<div class="container mx-auto">
+<div class="text-center mb-12">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Mengapa Memilih CaliPintar?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">Pendekatan kami disesuaikan dengan dunia anak, membuat belajar terasa seperti bermain.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<!-- Card 1 -->
+<div class="bg-surface rounded-[24px] p-8 shadow-[0px_8px_30px_rgba(0,88,188,0.05)] border border-surface-container-high hover:-translate-y-2 hover:shadow-[0px_12px_40px_rgba(0,88,188,0.1)] transition-all duration-300 flex flex-col items-center text-center group">
+<div class="w-20 h-20 rounded-full bg-secondary-fixed flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-[40px] text-on-secondary-fixed" data-icon="toys">toys</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Metode Belajar Seru</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Menggunakan alat peraga dan permainan edukatif yang merangsang imajinasi.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface rounded-[24px] p-8 shadow-[0px_8px_30px_rgba(0,88,188,0.05)] border border-surface-container-high hover:-translate-y-2 hover:shadow-[0px_12px_40px_rgba(0,88,188,0.1)] transition-all duration-300 flex flex-col items-center text-center group">
+<div class="w-20 h-20 rounded-full bg-primary-fixed flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-[40px] text-on-primary-fixed" data-icon="emoji_people">emoji_people</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Guru Ramah &amp; Sabar</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Tim pengajar berpengalaman yang penuh kasih sayang dalam membimbing setiap anak.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface rounded-[24px] p-8 shadow-[0px_8px_30px_rgba(0,88,188,0.05)] border border-surface-container-high hover:-translate-y-2 hover:shadow-[0px_12px_40px_rgba(0,88,188,0.1)] transition-all duration-300 flex flex-col items-center text-center group">
+<div class="w-20 h-20 rounded-full bg-tertiary-fixed flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-[40px] text-on-tertiary-fixed" data-icon="groups">groups</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Kelas Interaktif</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Lingkungan belajar yang mendorong partisipasi aktif dan sosialisasi anak.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Programs Section -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop bg-surface relative overflow-hidden" id="program">
+<div class="absolute right-0 top-0 w-[500px] h-[500px] blob-bg-yellow opacity-20 z-0"></div>
+<div class="container mx-auto relative z-10">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Program Unggulan Kami</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">Kurikulum yang dirancang khusus untuk membangun fondasi akademik yang kuat.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-md">
+<!-- Program Baca -->
+<div class="bg-surface-container-lowest rounded-[32px] p-8 shadow-[0px_8px_30px_rgba(0,88,188,0.08)] border border-surface-container-high flex flex-col hover:shadow-[0px_16px_40px_rgba(0,88,188,0.12)] transition-shadow duration-300">
+<div class="bg-primary-fixed w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-[32px] text-primary" data-icon="menu_book">menu_book</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Membaca (Baca)</h3>
+<ul class="space-y-3 mb-8 flex-grow">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-1" data-icon="star">star</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Pengenalan huruf abjad menyenangkan</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-1" data-icon="star">star</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Mengeja suku kata dasar</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-1" data-icon="star">star</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Membaca cerita pendek interaktif</span>
+</li>
+</ul>
+<button class="w-full py-3 rounded-xl bg-surface-container-low text-primary font-label-lg text-label-lg hover:bg-primary-fixed transition-colors">Lihat Detail</button>
+</div>
+<!-- Program Tulis -->
+<div class="bg-surface-container-lowest rounded-[32px] p-8 shadow-[0px_8px_30px_rgba(0,88,188,0.08)] border border-surface-container-high flex flex-col hover:shadow-[0px_16px_40px_rgba(0,88,188,0.12)] transition-shadow duration-300 relative transform lg:-translate-y-8">
+<div class="absolute top-0 left-0 w-full h-2 bg-secondary-container rounded-t-[32px]"></div>
+<div class="bg-secondary-fixed w-16 h-16 rounded-2xl flex items-center justify-center mb-6 mt-2">
+<span class="material-symbols-outlined text-[32px] text-secondary" data-icon="edit">edit</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Menulis (Tulis)</h3>
+<ul class="space-y-3 mb-8 flex-grow">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-1" data-icon="star">star</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Melatih motorik halus anak</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-1" data-icon="star">star</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Menulis huruf dan angka dengan rapi</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-1" data-icon="star">star</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Menyalin kata dan kalimat sederhana</span>
+</li>
+</ul>
+<button class="w-full py-3 rounded-xl bg-secondary-container text-on-secondary-container font-label-lg text-label-lg hover:bg-secondary-fixed transition-colors shadow-sm">Lihat Detail</button>
+</div>
+<!-- Program Hitung -->
+<div class="bg-surface-container-lowest rounded-[32px] p-8 shadow-[0px_8px_30px_rgba(0,88,188,0.08)] border border-surface-container-high flex flex-col hover:shadow-[0px_16px_40px_rgba(0,88,188,0.12)] transition-shadow duration-300">
+<div class="bg-tertiary-fixed w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-[32px] text-tertiary" data-icon="calculate">calculate</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Berhitung (Hitung)</h3>
+<ul class="space-y-3 mb-8 flex-grow">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-1" data-icon="star">star</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Pengenalan angka dan konsep jumlah</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-1" data-icon="star">star</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Penjumlahan &amp; pengurangan dasar</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-1" data-icon="star">star</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Permainan logika matematika seru</span>
+</li>
+</ul>
+<button class="w-full py-3 rounded-xl bg-surface-container-low text-primary font-label-lg text-label-lg hover:bg-primary-fixed transition-colors">Lihat Detail</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop bg-surface-container-low" id="testimoni">
+<div class="container mx-auto">
+<div class="text-center mb-12">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Apa Kata Bunda?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">Pengalaman nyata dari orang tua yang telah mempercayakan pendidikan awal anak mereka kepada kami.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<!-- Testi 1 -->
+<div class="bg-surface rounded-[24px] p-6 shadow-sm border border-surface-container-highest relative">
+<span class="material-symbols-outlined text-primary-fixed opacity-50 text-[60px] absolute top-4 right-4" data-icon="format_quote">format_quote</span>
+<div class="flex items-center gap-4 mb-4 relative z-10">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-headline-md">B</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface">Bunda Aisyah</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Mama dari Bima (5 Tahun)</p>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant relative z-10 italic">"Semenjak masuk CaliPintar, Bima jadi semangat banget belajar baca. Metodenya nggak bikin bosen, gurunya juga sabar banget ngadepin Bima yang super aktif."</p>
+</div>
+<!-- Testi 2 -->
+<div class="bg-surface rounded-[24px] p-6 shadow-sm border border-surface-container-highest relative">
+<span class="material-symbols-outlined text-secondary-fixed opacity-50 text-[60px] absolute top-4 right-4" data-icon="format_quote">format_quote</span>
+<div class="flex items-center gap-4 mb-4 relative z-10">
+<div class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-headline-md">I</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface">Ibu Rini</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Mama dari Kila (4 Tahun)</p>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant relative z-10 italic">"Awalnya ragu Kila bisa nulis karena tangannya masih kaku, tapi berkat program Tulis di sini, sekarang motorik halusnya jauh lebih baik dan tulisannya mulai rapi."</p>
+</div>
+<!-- Testi 3 -->
+<div class="bg-surface rounded-[24px] p-6 shadow-sm border border-surface-container-highest relative">
+<span class="material-symbols-outlined text-tertiary-fixed opacity-50 text-[60px] absolute top-4 right-4" data-icon="format_quote">format_quote</span>
+<div class="flex items-center gap-4 mb-4 relative z-10">
+<div class="w-12 h-12 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center font-headline-md">M</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface">Mama Dika</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Mama dari Dika (6 Tahun)</p>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant relative z-10 italic">"Persiapan masuk SD jadi lebih tenang karena Dika udah lancar berhitung dasar. Lingkungan belajarnya sangat mendukung dan positif untuk perkembangan anak."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Bottom CTA -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop bg-primary text-on-primary relative overflow-hidden">
+<div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4xIi8+PC9zdmc+')] opacity-50"></div>
+<div class="container mx-auto text-center relative z-10">
+<h2 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl mb-6">Siap Memulai Petualangan Belajar?</h2>
+<p class="font-body-lg text-body-lg text-primary-fixed mb-8 max-w-2xl mx-auto">Berikan yang terbaik untuk masa depan si kecil. Daftar sekarang dan dapatkan potongan harga khusus untuk bulan ini!</p>
+<button class="bg-secondary-container text-on-secondary-container px-10 py-4 rounded-full font-label-lg text-label-lg text-[18px] hover:scale-105 hover:shadow-xl transition-all duration-300 shadow-[0px_8px_30px_rgba(253,212,0,0.4)]">
+                Daftar Sekarang
+            </button>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full px-margin-desktop py-lg grid grid-cols-1 md:grid-cols-4 gap-gutter bg-surface-container-low dark:bg-surface-dim bg-surface-container-high dark:bg-surface-container-highest">
+<div class="col-span-1 md:col-span-1">
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-inverse-primary block mb-4">CaliPintar</span>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                © 2024 CaliPintar Learning Center. Menumbuhkan Minat Belajar Sejak Dini.
+            </p>
+</div>
+<div class="col-span-1 md:col-span-3 flex flex-wrap gap-x-8 gap-y-4 md:justify-end items-start pt-2">
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-surface-variant hover:text-primary hover:underline transition-all" href="#">Program Baca</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-surface-variant hover:text-primary hover:underline transition-all" href="#">Program Tulis</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-surface-variant hover:text-primary hover:underline transition-all" href="#">Program Hitung</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-surface-variant hover:text-primary hover:underline transition-all" href="#">Hubungi Kami</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-surface-variant hover:text-primary hover:underline transition-all" href="#">Kebijakan Privasi</a>
+</div>
+</footer>
+</body></html>
