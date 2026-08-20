@@ -167,16 +167,19 @@
 </div>
 </div>
 
-<!-- Bagian Slider Gambar Otomatis -->
+<!-- Bagian Slider Gambar Efek Geser (Slide) -->
 <div class="relative h-[400px] md:h-[500px] w-full mt-12 lg:mt-0">
 <div class="absolute inset-0 bg-primary-container rounded-[40px] transform rotate-3 scale-95 shadow-[0px_4px_20px_rgba(0,88,188,0.2)]"></div>
-<div id="hero-slider" class="absolute inset-0 w-full h-full rounded-[40px] overflow-hidden transform -rotate-3 shadow-lg">
-    <!-- Gambar 1 -->
-    <img class="hero-slide absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnu5A30zH053_B9HtrdG1R2T5b_gDNITegFAF0f2PMSdYDaj6j5JMRc7FTPyP3DcEkEGuqzA-QMw2JnEiMSot8uoAbh5tHh__VJmIC8JjkUhxgBpjl9wQ-NUVLBBtjogfDBkUlfDY3pNfnaGoX1TdjdzH3oQfPvmfLyNgMXN7VHFMRUqJF_mnGkzQWsuZRxMZkFFzkyEFVc6wq_kKJxw22xlFrFD3_17xS6YUJtvinhLV6b6UrdEvW" alt="Kegiatan Belajar 1"/>
-    <!-- Gambar 2 (Tambahkan gambar lain sesuai kebutuhan) -->
-    <img class="hero-slide absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0" src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1000&auto=format&fit=crop" alt="Kegiatan Belajar 2"/>
-    <!-- Gambar 3 -->
-    <img class="hero-slide absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0" src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1000&auto=format&fit=crop" alt="Kegiatan Belajar 3"/>
+<div class="absolute inset-0 w-full h-full rounded-[40px] overflow-hidden transform -rotate-3 shadow-lg bg-surface">
+    <!-- Container track untuk geser gambar -->
+    <div id="slider-track" class="flex h-full transition-transform duration-700 ease-in-out">
+        <!-- Gambar 1 -->
+        <img class="w-full h-full object-cover flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnu5A30zH053_B9HtrdG1R2T5b_gDNITegFAF0f2PMSdYDaj6j5JMRc7FTPyP3DcEkEGuqzA-QMw2JnEiMSot8uoAbh5tHh__VJmIC8JjkUhxgBpjl9wQ-NUVLBBtjogfDBkUlfDY3pNfnaGoX1TdjdzH3oQfPvmfLyNgMXN7VHFMRUqJF_mnGkzQWsuZRxMZkFFzkyEFVc6wq_kKJxw22xlFrFD3_17xS6YUJtvinhLV6b6UrdEvW" alt="Kegiatan Belajar 1"/>
+        <!-- Gambar 2 -->
+        <img class="w-full h-full object-cover flex-shrink-0" src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1000&auto=format&fit=crop" alt="Kegiatan Belajar 2"/>
+        <!-- Gambar 3 -->
+        <img class="w-full h-full object-cover flex-shrink-0" src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1000&auto=format&fit=crop" alt="Kegiatan Belajar 3"/>
+    </div>
 </div>
 </div>
 
@@ -374,23 +377,19 @@
 </div>
 </footer>
 
-<!-- Script untuk Slide Otomatis -->
+<!-- Script untuk Efek Slide Menyamping -->
 <script>
-    const slides = document.querySelectorAll('.hero-slide');
-    let currentSlide = 0;
+    const track = document.getElementById('slider-track');
+    const slides = track.children;
+    let currentIndex = 0;
 
-    function nextSlide() {
-        slides[currentSlide].classList.remove('opacity-100');
-        slides[currentSlide].classList.add('opacity-0');
-        
-        currentSlide = (currentSlide + 1) % slides.length;
-        
-        slides[currentSlide].classList.remove('opacity-0');
-        slides[currentSlide].classList.add('opacity-100');
+    function moveSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        track.style.transform = `translateX(-${currentIndex * 100}%)`;
     }
 
-    // Ubah gambar setiap 3500ms (3.5 detik)
-    setInterval(nextSlide, 3500);
+    // Geser otomatis setiap 3.5 detik
+    setInterval(moveSlide, 3500);
 </script>
 </body>
 </html>
